@@ -1,0 +1,36 @@
+version: '3' # phiên bản YAML docker-compose
+services: # docker build, docker run, port, gắn volume,....
+  build_html:
+    container_name: cons-html
+    build: ./html # docker build .
+    # image: undertarke/devops02
+    ports:
+      - 3001:80
+
+  build_node:
+    container_name: cons-node
+    build: ./backend_nodejs
+    ports:
+      - 8088:8088
+    # env_file: .env
+    # environment:
+    #   - DATABASE_URL=$DB_URL
+    #   - A=$TITLE
+    #   - B=$DEMO
+    networks:
+      - demo_network
+    volumes:
+      # - demo_volume:/root
+      - /Users/MAC/Downloads/root:/root
+
+volumes:
+  demo_volume:
+    driver: local
+
+networks:
+  demo_network: 
+    external: true # để cho docker-compose biết đã tạo network này rồi
+
+# docker-compose up -d
+# docker-compose down
+# docker-compose build
