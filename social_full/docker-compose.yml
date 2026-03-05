@@ -1,0 +1,14 @@
+version: '3'
+services:
+  frontend-react:
+    container_name: frontend-react
+    build: ./frontend
+    ports:
+      - 5173:80
+
+  backend-express:
+    container_name: backend-express
+    build: ./API
+    ports:
+      - 8800:8800
+    
