@@ -1,6 +1,6 @@
 # pull app từ hub docker
 
-FROM nginx
+FROM --platform=linux/amd64 nginx
 
 WORKDIR /usr/share/nginx/html
 
