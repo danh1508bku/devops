@@ -4,12 +4,12 @@ WORKDIR /backend-express
 
 COPY package*.json ./
 
-RUN yarn config set network-timeout 3000000
-RUN yarn install
+RUN npm config set fetch-timeout 3000000
+RUN npm install
 
 
 COPY . .
 
 EXPOSE 8800
 
-CMD [ "yarn","start"]
+CMD [ "npm","run","start"]
