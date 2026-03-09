@@ -149,7 +149,7 @@ const { isPending, data,error } = useQuery({
             <div className="card-body p-0">
 
 
-              <img src={`https://152.42.251.52:5173/uploads/posts/${story.img}`} alt={story.username} size="lg" />
+              <img src={`https://react.danhbku.xyz/uploads/posts/${story.img}`} alt={story.username} size="lg" />
             </div>
             <div className="card-footer text-center">
               <span className="text-xs font-semibold">{story.username}</span>

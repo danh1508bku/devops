@@ -50,7 +50,7 @@ const Leftbar = () => {
               <img
                 alt=""
                 className="rounded-full"
-                src={currentUser.profilePic ? `https://152.42.251.52:5173/uploads/posts/${currentUser.profilePic}` : "https://152.42.251.52:5173/default/default_profile.png"}
+                src={currentUser.profilePic ? `https://react.danhbku.xyz/uploads/posts/${currentUser.profilePic}` : "https://react.danhbku.xyz/default/default_profile.png"}
                 />
               <li>
                 <span>{currentUser.username}</span>
