@@ -108,8 +108,8 @@ const Post = ({ post }) => {
                         className="rounded-full"
                         src={
                           currentUser.profilePic
-                            ? `http://152.42.251.52:5173/uploads/posts/${currentUser.profilePic}`
-                            : "http://152.42.251.52:5173/default/default_profile.png"
+                            ? `https://152.42.251.52:5173/uploads/posts/${currentUser.profilePic}`
+                            : "https://152.42.251.52:5173/default/default_profile.png"
                         }
                       />
                     </div>
@@ -119,7 +119,7 @@ const Post = ({ post }) => {
                 </Link>
                 <figure className="relative">
                   <img
-                    src={`http://152.42.251.52:5173/uploads/posts/${post.img}`}
+                    src={`https://152.42.251.52:5173/uploads/posts/${post.img}`}
                     alt="Post Image"
                   />
                   <div className="absolute bottom-0 right-0 p-4">
@@ -154,8 +154,8 @@ const Post = ({ post }) => {
                         className="rounded-full"
                         src={
                           currentUser.profilePic
-                            ? `http://152.42.251.52:5173/uploads/posts/${currentUser.profilePic}`
-                            : "http://152.42.251.52:5173/default/default_profile.png"
+                            ? `https://152.42.251.52:5173/uploads/posts/${currentUser.profilePic}`
+                            : "https://152.42.251.52:5173/default/default_profile.png"
                         }
                       />
                     </div>

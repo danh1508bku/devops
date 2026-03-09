@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 });
 
 app.use(cors({
-  origin: ["http://localhost:5173","https://react.danhbku.xyz"],
+  origin: ["https://152.42.251.52:5173","https://react.danhbku.xyz"],
 }));
 
 app.use(express.json());
